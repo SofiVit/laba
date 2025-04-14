@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Кафедра | KUNST</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        background-color: #fdfdfd;
+      }
+      header {
+        background-color: #7ec8e3;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #fcd5ed;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .top-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #fcd5ed;
+      }
+      .top-container nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      .top-container .search-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .top-container .search-container input {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      main {
+        padding: 30px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: #7ec8e3;
+        border-bottom: 2px solid #7ec8e3;
+        padding-bottom: 5px;
+      }
+      article {
+        background-color: #e0f7fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      footer {
+        background-color: #fcd5ed;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      footer nav a {
+        margin: 0 10px;
+      }
+      footer i {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>KUNST</h1>
+      <p>Кафедра цифрового мистецтва</p>
+    </header>
+
+    <div class="top-container">
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="kafedra.html">Кафедра</a>
+        <a href="#">Курси</a>
+        <a href="#">Контакти</a>
+      </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Пошук по сайту..." />
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <h2>Про кафедру</h2>
+        <p>
+          Кафедра цифрового мистецтва готує фахівців у сфері сучасних технологій
+          мистецтва. Наші програми охоплюють різні напрямки:
+        </p>
+        <ul>
+          <li>
+            Графічний дизайн: створення візуальних концепцій для брендів і
+            компаній.
+          </li>
+          <li>Мультимедіа: інтерактивні та аудіовізуальні проекти.</li>
+          <li>Фотографія: мистецтво та техніка фотографії.</li>
+          <li>3D-моделювання: розробка тривимірних об'єктів і анімацій.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Наші викладачі</h2>
+        <article>
+          <h3>Ірина Коваль</h3>
+          <p>
+            Доцент, кандидат мистецтвознавства. Спеціалізація: графічний дизайн
+            та ілюстрація. Має понад 15 років досвіду в індустрії.
+          </p>
+        </article>
+        <article>
+          <h3>Олександр Бондар</h3>
+          <p>
+            Старший викладач. Спеціалізація: вебдизайн, UX/UI. Працює з
+            провідними компаніями в галузі цифрових технологій.
+          </p>
+        </article>
+        <article>
+          <h3>Марія Чорна</h3>
+          <p>
+            Викладач. Спеціалізація: фотографія та візуальне мистецтво.
+            Організатор численних виставок і арт-проектів.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Матеріальна база</h2>
+        <p>
+          Кафедра має сучасні комп'ютерні класи, оснащені потужними ПК та
+          професійним програмним забезпеченням для графічного дизайну та
+          3D-моделювання. Також ми маємо студію для фотографії, VR-зону, де
+          студенти можуть працювати з новітніми технологіями.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <address>
+          <strong>KUNST — Кафедра цифрового мистецтва</strong><br />
+          м. Харків, вул. Мистецька, 10<br />
+          Тел: <a href="tel:+380671234567">+380 67 123 4567</a><br />
+          Email: <a href="mailto:info@kunst.ua">info@kunst.ua</a>
+        </address>
+      </section>
+
+      <nav aria-label="Соцмережі">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook"></i>Facebook</a
+        >
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i>Instagram</a
+        >
+        <a href="https://youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i>YouTube</a
+        >
+      </nav>
+
+      <p>&copy; 2025 KUNST</p>
+    </footer>
+  </body>
+</html>

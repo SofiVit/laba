@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Головна сторінка | KUNST</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f6f9;
+      }
+      header {
+        background-color: #9ddbff;
+        color: #000000;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+        background-color: #fcd5ed;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 16px;
+      }
+      nav a:hover {
+        color: #fcd5ed;
+        background-color: #7ec8e3;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .nav-left {
+        display: flex;
+      }
+      .nav-left a {
+        margin: 0 10px;
+      }
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+      .search-container input {
+        padding: 10px;
+        width: 250px;
+        font-size: 16px;
+        border: 2px solid #7ec8e3;
+        border-radius: 5px;
+      }
+      .search-container button {
+        padding: 10px 20px;
+        background-color: #fcd5ed;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .search-container button:hover {
+        background-color: #7ec8e3;
+      }
+      .banner {
+        width: 100%;
+        height: 300px;
+        background-image: url("assets/art-banner2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .content {
+        padding: 20px;
+      }
+
+      .section-title {
+        font-size: 24px;
+        color: #7ec8e3;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .news-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .news-item {
+        background-color: #7ec8e3;
+        padding: 15px;
+        border-radius: 5px;
+        width: 30%;
+      }
+      .news-item h3 {
+        color: #7ec8e3;
+      }
+
+      .courses-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .course-item {
+        background-color: #fcd5ed;
+        padding: 20px;
+        border-radius: 5px;
+        width: 30%;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      .course-item h3 {
+        color: #7ec8e3;
+      }
+
+      /* Футер */
+      footer {
+        background-color: #fcd5ed;
+        padding: 20px;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      footer h2 {
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        width: 45%;
+        margin-bottom: 20px;
+      }
+      .contact-info p {
+        margin: 10px 0;
+      }
+
+      /* Форма для запитань */
+      .question-form {
+        width: 30%;
+        margin-bottom: 20px;
+      }
+      .question-form input,
+      .question-form textarea {
+        width: 100%;
+        padding: 6px;
+        margin: 8px 0;
+        border: 2px solid #7ec8e3;
+        border-radius: 5px;
+      }
+      .question-form button {
+        padding: 6px 12px;
+        background-color: #7ec8e3;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .question-form button:hover {
+        background-color: #fcd5ed;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>KUNST - Простір для мистецтва та дизайну</h1>
+      <p>Ми формуємо нову естетику і надихаємо на творчість</p>
+    </header>
+
+    <nav>
+      <div class="nav-left">
+        <a href="#">Про нас</a>
+        <a href="#">Курси</a>
+        <a href="#">Виставки</a>
+        <a href="#">Новини</a>
+        <a href="#">Контакти</a>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Пошук..." />
+        <button>Шукати</button>
+      </div>
+    </nav>
+
+    <div class="content">
+      <!-- Заголовок для новин -->
+      <div class="section-title">Новини</div>
+      <!-- Розділ новин -->
+      <div class="news-section">
+        <div class="news-item">
+          <h3>Відкриття виставки художніх робіт</h3>
+          <p>
+            Виставка відкрилася у галереї KUNST. Запрошуємо всіх бажаючих
+            відвідати та оцінити роботи наших студентів.
+          </p>
+        </div>
+        <div class="news-item">
+          <h3>Майстер-клас з графічного дизайну</h3>
+          <p>
+            Наші викладачі організовують серію майстер-класів для тих, хто хоче
+            поглибити знання у графічному дизайні.
+          </p>
+        </div>
+        <div class="news-item">
+          <h3>Конкурс для молодих художників</h3>
+          <p>
+            Ми оголосили конкурс для студентів факультету, щоб підтримати їх
+            таланти та новаторські ідеї.
+          </p>
+        </div>
+      </div>
+
+      <!-- Заголовок для курсів -->
+      <div class="section-title">Курси</div>
+      <!-- Розділ курсів -->
+      <div class="courses-section">
+        <div class="course-item">
+          <h3>Графічний дизайн</h3>
+          <p>
+            Навчання основам графічного дизайну, інструменти Adobe Creative
+            Suite.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Веб-дизайн</h3>
+          <p>
+            Курс з дизайну сайтів, HTML/CSS, UX/UI та інтерактивні елементи.
+          </p>
+        </div>
+        <div class="course-item">
+          <h3>Фотографія</h3>
+          <p>Мистецтво фотографії, основи композиції та обробка зображень.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Футер з контактами і формою запитань -->
+    <footer>
+      <!-- Контактна інформація -->
+      <div class="contact-info">
+        <h2>Контакти</h2>
+        <p><strong>Адреса:</strong> м. Київ, вул. Мистецтва, 12</p>
+        <p><strong>Телефон:</strong> +380 44 123 4567</p>
+        <p><strong>Email:</strong> info@artspice.com</p>
+      </div>
+
+      <!-- Форма для запитань -->
+      <div class="question-form">
+        <h2>Задайте своє питання</h2>
+        <form>
+          <input type="text" placeholder="Ваше ім'я" required />
+          <input type="email" placeholder="Ваша електронна пошта" required />
+          <textarea rows="4" placeholder="Ваше запитання" required></textarea>
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

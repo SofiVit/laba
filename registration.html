@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Форма реєстрації студента</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .form-container {
+        background-color: #ffffffcc;
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 600px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #6a1b9a;
+        margin-bottom: 20px;
+      }
+
+      fieldset {
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #4a148c;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 6px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #6a1b9a;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #4a148c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Реєстрація студента</h1>
+
+      <form action="submit_registration.php" method="post">
+        <fieldset>
+          <legend>Персональні дані</legend>
+
+          <label for="surname">Прізвище:</label>
+          <input type="text" id="surname" name="surname" required />
+
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="patronymic">По батькові:</label>
+          <input type="text" id="patronymic" name="patronymic" required />
+
+          <label for="email">Електронна пошта:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          />
+
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+          />
+
+          <label for="confirm-password">Підтвердження пароля:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            minlength="6"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Додаткова інформація</legend>
+
+          <label for="birthdate">Дата народження:</label>
+          <input type="date" id="birthdate" name="birthdate" />
+
+          <label>Стать:</label>
+          <label
+            ><input
+              type="radio"
+              name="gender"
+              value="Чоловіча"
+              required
+            />Чоловіча</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Жіноча" />Жіноча</label
+          >
+
+          <label for="faculty">Факультет:</label>
+          <select id="faculty" name="faculty" required>
+            <option value="">-- Оберіть факультет --</option>
+            <option value="ФІТ">ФІТ</option>
+            <option value="ІТММ">ІТММ</option>
+            <option value="КН">КН</option>
+          </select>
+
+          <label>Курс навчання:</label>
+          <label
+            ><input type="radio" name="course" value="1" required /> 1</label
+          >
+          <label><input type="radio" name="course" value="2" /> 2</label>
+          <label><input type="radio" name="course" value="3" /> 3</label>
+          <label><input type="radio" name="course" value="4" /> 4</label>
+
+          <label for="info">Додаткова інформація:</label>
+          <textarea id="info" name="info" rows="4"></textarea>
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            Я даю згоду на обробку персональних даних
+          </label>
+        </fieldset>
+
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </div>
+  </body>
+</html>
